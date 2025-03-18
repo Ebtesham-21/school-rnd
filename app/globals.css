@@ -82,3 +82,12 @@ body,
     @apply bg-background text-foreground;
   }
 }
+
+.cl-formButtonPrimary {
+  color: white;
+  background-color: red;
+}
+
+.cl-formButtonPrimary:hover {
+  background-color: rgba(245, 82, 6, 0.8);
+}

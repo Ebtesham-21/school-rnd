@@ -30,7 +30,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div className="h-full flex items-center justify-center">  {children} </div>
+      
       </body>
     </html>
     </ClerkProvider>
