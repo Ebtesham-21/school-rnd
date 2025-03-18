@@ -1,8 +1,13 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Topbar = () => {
   return (
-    <div>Topbar</div>
+    <div className='flex justify-between items-center p-4'>
+      <Link>
+      
+      </Link>
+    </div>
   )
 }
 
