@@ -5,11 +5,12 @@ import { Search, User } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { Button } from '../ui/button'
 
 const Topbar = () => {
 
 
-  const {userId} = useAuth();
+  const {isSignedIn} = useAuth();
   const topRoutes = [
     {label: "Instructor", path: "/instructor/courses"},
     {label: "Learning", path: "/learning"}
@@ -52,7 +53,7 @@ const Topbar = () => {
           isSignedIn ? (
             <UserButton afterSignOutUrl='sign-in'/>
           ) : (
-
+              <Link href="/sign-in"><Button> Sign In</Button>  </Link>
           )
         }
        
